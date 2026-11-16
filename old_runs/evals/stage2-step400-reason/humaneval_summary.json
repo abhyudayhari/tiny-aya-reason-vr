@@ -1,0 +1,13 @@
+{
+  "model": "stage2-step400",
+  "set": "humaneval",
+  "n": 164,
+  "accuracy": 58.54,
+  "breakdown": {
+    "humaneval": {
+      "n": 164,
+      "accuracy": 58.54
+    }
+  },
+  "seconds": 146.0
+}

@@ -1,0 +1,13 @@
+{
+  "model": "tiny-aya-reason-vr",
+  "set": "finqa",
+  "n": 1147,
+  "accuracy": 49.0,
+  "breakdown": {
+    "finqa": {
+      "n": 1147,
+      "accuracy": 49.0
+    }
+  },
+  "seconds": 110.7
+}

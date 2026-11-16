@@ -1,0 +1,13 @@
+{
+  "model": "stage2-step400",
+  "set": "finqa",
+  "n": 1147,
+  "accuracy": 46.82,
+  "breakdown": {
+    "finqa": {
+      "n": 1147,
+      "accuracy": 46.82
+    }
+  },
+  "seconds": 157.2
+}

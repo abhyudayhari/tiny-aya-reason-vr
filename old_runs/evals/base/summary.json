@@ -1,0 +1,61 @@
+{
+  "model": "CohereLabs/tiny-aya-global",
+  "tag": "base",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "gsm8k": {
+      "n": 1319,
+      "accuracy": 72.55,
+      "auditkit_headline": {
+        "math_verify_acc": 72.55,
+        "has_boxed": 99.39
+      },
+      "breakdown": {
+        "all": 72.55
+      },
+      "seconds": 74.9,
+      "auditkit_fingerprint": "339bb649f7a488bf"
+    },
+    "math500": {
+      "n": 500,
+      "accuracy": 28.2,
+      "auditkit_headline": {
+        "math_verify_acc": 28.2,
+        "has_boxed": 93.2
+      },
+      "breakdown": {
+        "1": 69.77,
+        "2": 46.67,
+        "3": 30.48,
+        "4": 21.09,
+        "5": 7.46
+      },
+      "seconds": 34.2,
+      "auditkit_fingerprint": "2e3b71c99d0591cf"
+    },
+    "mgsm": {
+      "n": 2500,
+      "accuracy": 58.44,
+      "auditkit_headline": {
+        "math_verify_acc": 58.44,
+        "has_boxed": 99.2
+      },
+      "breakdown": {
+        "bn": 54.4,
+        "de": 64.8,
+        "es": 71.2,
+        "fr": 59.2,
+        "ja": 47.6,
+        "ru": 67.2,
+        "sw": 58.0,
+        "te": 53.2,
+        "th": 54.8,
+        "zh": 54.0
+      },
+      "seconds": 40.7,
+      "auditkit_fingerprint": "58791e0f5119413c"
+    }
+  }
+}

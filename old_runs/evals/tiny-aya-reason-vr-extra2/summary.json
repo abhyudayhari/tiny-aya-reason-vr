@@ -1,0 +1,54 @@
+{
+  "model": "tiny-aya-reason-vr",
+  "tag": "tiny-aya-reason-vr-extra2",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "gsm_plus": {
+      "n": 2100,
+      "accuracy": 64.24,
+      "auditkit_headline": {
+        "math_verify_acc": 64.24,
+        "has_boxed": 99.81
+      },
+      "breakdown": {
+        "adding operation": 55.67,
+        "digit expansion": 71.0,
+        "distraction insertion": 61.33,
+        "integer-decimal-fraction conversion": 58.33,
+        "numerical substitution": 69.0,
+        "problem understanding": 78.0,
+        "reversing operation": 56.33
+      },
+      "seconds": 105.1,
+      "auditkit_fingerprint": "dd177c33be62b487"
+    },
+    "minerva": {
+      "n": 272,
+      "accuracy": 12.13,
+      "auditkit_headline": {
+        "math_verify_acc": 12.13,
+        "has_boxed": 100.0
+      },
+      "breakdown": {
+        "all": 12.13
+      },
+      "seconds": 41.2,
+      "auditkit_fingerprint": "e4cfc1ee26ed2543"
+    },
+    "olympiad": {
+      "n": 581,
+      "accuracy": 8.61,
+      "auditkit_headline": {
+        "math_verify_acc": 8.61,
+        "has_boxed": 97.25
+      },
+      "breakdown": {
+        "all": 8.61
+      },
+      "seconds": 49.7,
+      "auditkit_fingerprint": "b2981886052b31e5"
+    }
+  }
+}

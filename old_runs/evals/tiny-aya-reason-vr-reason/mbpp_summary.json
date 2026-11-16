@@ -1,0 +1,13 @@
+{
+  "model": "tiny-aya-reason-vr",
+  "set": "mbpp",
+  "n": 257,
+  "accuracy": 56.81,
+  "breakdown": {
+    "mbpp": {
+      "n": 257,
+      "accuracy": 56.81
+    }
+  },
+  "seconds": 62.2
+}

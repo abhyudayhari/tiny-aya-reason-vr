@@ -1,0 +1,41 @@
+{
+  "model": "tiny-aya-reason-vr",
+  "tag": "tiny-aya-reason-vr-indic",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "gsm8k_indic": {
+      "n": 26351,
+      "accuracy": 35.62,
+      "auditkit_headline": {
+        "math_verify_acc": 35.62,
+        "has_boxed": 94.29
+      },
+      "breakdown": {
+        "bn": 67.93,
+        "bn_roman": 16.53,
+        "gu": 68.31,
+        "gu_roman": 15.17,
+        "hi": 70.2,
+        "hi_roman": 47.69,
+        "kn": 31.99,
+        "kn_roman": 7.83,
+        "ml": 26.61,
+        "ml_roman": 9.33,
+        "mr": 66.94,
+        "mr_roman": 15.19,
+        "or": 8.72,
+        "or_roman": 17.97,
+        "pa": 69.75,
+        "pa_roman": 20.47,
+        "ta": 67.55,
+        "ta_roman": 6.45,
+        "te": 67.7,
+        "te_roman": 9.55
+      },
+      "seconds": 1217.5,
+      "auditkit_fingerprint": "2460183be9562b52"
+    }
+  }
+}

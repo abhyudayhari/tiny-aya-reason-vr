@@ -1,0 +1,41 @@
+{
+  "model": "CohereLabs/tiny-aya-global",
+  "tag": "base-indic",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "gsm8k_indic": {
+      "n": 26351,
+      "accuracy": 31.38,
+      "auditkit_headline": {
+        "math_verify_acc": 31.38,
+        "has_boxed": 90.22
+      },
+      "breakdown": {
+        "bn": 61.87,
+        "bn_roman": 14.18,
+        "gu": 60.5,
+        "gu_roman": 10.62,
+        "hi": 65.05,
+        "hi_roman": 39.8,
+        "kn": 29.64,
+        "kn_roman": 8.74,
+        "ml": 19.03,
+        "ml_roman": 9.7,
+        "mr": 61.71,
+        "mr_roman": 13.28,
+        "or": 10.84,
+        "or_roman": 13.72,
+        "pa": 59.89,
+        "pa_roman": 16.22,
+        "ta": 58.61,
+        "ta_roman": 5.3,
+        "te": 59.36,
+        "te_roman": 8.95
+      },
+      "seconds": 1275.8,
+      "auditkit_fingerprint": "4f96b7be76777ea3"
+    }
+  }
+}

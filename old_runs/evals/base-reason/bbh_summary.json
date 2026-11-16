@@ -1,0 +1,41 @@
+{
+  "model": "CohereLabs/tiny-aya-global",
+  "set": "bbh",
+  "n": 2000,
+  "accuracy": 48.3,
+  "breakdown": {
+    "boolean_expressions": {
+      "n": 250,
+      "accuracy": 76.8
+    },
+    "formal_fallacies": {
+      "n": 250,
+      "accuracy": 55.6
+    },
+    "logical_deduction_five_objects": {
+      "n": 250,
+      "accuracy": 22.8
+    },
+    "logical_deduction_seven_objects": {
+      "n": 250,
+      "accuracy": 19.6
+    },
+    "multistep_arithmetic_two": {
+      "n": 250,
+      "accuracy": 45.6
+    },
+    "navigate": {
+      "n": 250,
+      "accuracy": 65.2
+    },
+    "tracking_shuffled_objects_five_objects": {
+      "n": 250,
+      "accuracy": 53.6
+    },
+    "web_of_lies": {
+      "n": 250,
+      "accuracy": 47.2
+    }
+  },
+  "seconds": 204.7
+}

@@ -1,0 +1,13 @@
+{
+  "model": "stage2-step400",
+  "set": "kk",
+  "n": 100,
+  "accuracy": 26.0,
+  "breakdown": {
+    "kk-5ppl": {
+      "n": 100,
+      "accuracy": 26.0
+    }
+  },
+  "seconds": 5.4
+}

@@ -1,0 +1,13 @@
+{
+  "model": "stage1-math",
+  "set": "humaneval",
+  "n": 164,
+  "accuracy": 57.93,
+  "breakdown": {
+    "humaneval": {
+      "n": 164,
+      "accuracy": 57.93
+    }
+  },
+  "seconds": 191.4
+}

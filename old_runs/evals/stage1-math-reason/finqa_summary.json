@@ -1,0 +1,13 @@
+{
+  "model": "stage1-math",
+  "set": "finqa",
+  "n": 1147,
+  "accuracy": 42.98,
+  "breakdown": {
+    "finqa": {
+      "n": 1147,
+      "accuracy": 42.98
+    }
+  },
+  "seconds": 142.9
+}

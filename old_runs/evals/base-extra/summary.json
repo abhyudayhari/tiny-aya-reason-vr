@@ -1,0 +1,132 @@
+{
+  "model": "models/tiny-aya-global-eos3",
+  "tag": "base-extra",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "svamp": {
+      "n": 300,
+      "accuracy": 78.33,
+      "auditkit_headline": {
+        "math_verify_acc": 78.33,
+        "has_boxed": 99.67
+      },
+      "breakdown": {
+        "all": 78.33
+      },
+      "seconds": 53.3,
+      "auditkit_fingerprint": "533996e76c944478"
+    },
+    "asdiv": {
+      "n": 2167,
+      "accuracy": 82.69,
+      "auditkit_headline": {
+        "math_verify_acc": 82.69,
+        "has_boxed": 99.08
+      },
+      "breakdown": {
+        "all": 82.69
+      },
+      "seconds": 36.0,
+      "auditkit_fingerprint": "e9a87d68f993b798"
+    },
+    "gsm_hard": {
+      "n": 1319,
+      "accuracy": 26.76,
+      "auditkit_headline": {
+        "math_verify_acc": 26.76,
+        "has_boxed": 98.79
+      },
+      "breakdown": {
+        "all": 26.76
+      },
+      "seconds": 32.1,
+      "auditkit_fingerprint": "47e4608dbb29a349"
+    },
+    "gsm_plus": {
+      "n": 2100,
+      "accuracy": 55.95,
+      "auditkit_headline": {
+        "math_verify_acc": 55.95,
+        "has_boxed": 99.62
+      },
+      "breakdown": {
+        "adding operation": 45.67,
+        "digit expansion": 59.67,
+        "distraction insertion": 48.67,
+        "integer-decimal-fraction conversion": 49.67,
+        "numerical substitution": 65.0,
+        "problem understanding": 73.33,
+        "reversing operation": 49.67
+      },
+      "seconds": 38.2,
+      "auditkit_fingerprint": "1b5c55a6c83a741c"
+    },
+    "minerva": {
+      "n": 272,
+      "accuracy": 10.29,
+      "auditkit_headline": {
+        "math_verify_acc": 10.29,
+        "has_boxed": 99.26
+      },
+      "breakdown": {
+        "all": 10.29
+      },
+      "seconds": 35.2,
+      "auditkit_fingerprint": "70b1bf06f4201fe1"
+    },
+    "olympiad": {
+      "n": 581,
+      "accuracy": 7.4,
+      "auditkit_headline": {
+        "math_verify_acc": 7.4,
+        "has_boxed": 91.91
+      },
+      "breakdown": {
+        "all": 7.4
+      },
+      "seconds": 44.3,
+      "auditkit_fingerprint": "ca3c31f17136423e"
+    },
+    "amc23": {
+      "n": 40,
+      "accuracy": 2.5,
+      "auditkit_headline": {
+        "math_verify_acc": 2.5,
+        "has_boxed": 95.0
+      },
+      "breakdown": {
+        "all": 2.5
+      },
+      "seconds": 16.9,
+      "auditkit_fingerprint": "a83338ca3b0d2350"
+    },
+    "aime24": {
+      "n": 30,
+      "accuracy": 0.0,
+      "auditkit_headline": {
+        "math_verify_acc": 0.0,
+        "has_boxed": 90.0
+      },
+      "breakdown": {
+        "all": 0.0
+      },
+      "seconds": 17.1,
+      "auditkit_fingerprint": "76bfaa1ac78b97cb"
+    },
+    "aime25": {
+      "n": 30,
+      "accuracy": 0.0,
+      "auditkit_headline": {
+        "math_verify_acc": 0.0,
+        "has_boxed": 86.67
+      },
+      "breakdown": {
+        "all": 0.0
+      },
+      "seconds": 17.3,
+      "auditkit_fingerprint": "35e4c114b5ceacc8"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "model": "CohereLabs/tiny-aya-global",
+  "set": "mbpp",
+  "n": 257,
+  "accuracy": 54.09,
+  "breakdown": {
+    "mbpp": {
+      "n": 257,
+      "accuracy": 54.09
+    }
+  },
+  "seconds": 94.0
+}

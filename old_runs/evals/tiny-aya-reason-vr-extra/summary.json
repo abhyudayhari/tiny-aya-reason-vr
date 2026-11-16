@@ -1,0 +1,87 @@
+{
+  "model": "tiny-aya-reason-vr",
+  "tag": "tiny-aya-reason-vr-extra",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "svamp": {
+      "n": 300,
+      "accuracy": 83.33,
+      "auditkit_headline": {
+        "math_verify_acc": 83.33,
+        "has_boxed": 100.0
+      },
+      "breakdown": {
+        "all": 83.33
+      },
+      "seconds": 71.6,
+      "auditkit_fingerprint": "46067323d60c265b"
+    },
+    "asdiv": {
+      "n": 2167,
+      "accuracy": 85.14,
+      "auditkit_headline": {
+        "math_verify_acc": 85.14,
+        "has_boxed": 99.95
+      },
+      "breakdown": {
+        "all": 85.14
+      },
+      "seconds": 42.9,
+      "auditkit_fingerprint": "75a4d195adb285d9"
+    },
+    "gsm_hard": {
+      "n": 1319,
+      "accuracy": 30.4,
+      "auditkit_headline": {
+        "math_verify_acc": 30.4,
+        "has_boxed": 99.77
+      },
+      "breakdown": {
+        "all": 30.4
+      },
+      "seconds": 56.0,
+      "auditkit_fingerprint": "75e3de951487e11e"
+    },
+    "amc23": {
+      "n": 40,
+      "accuracy": 10.0,
+      "auditkit_headline": {
+        "math_verify_acc": 10.0,
+        "has_boxed": 100.0
+      },
+      "breakdown": {
+        "all": 10.0
+      },
+      "seconds": 17.2,
+      "auditkit_fingerprint": "065b0fe46ac8a362"
+    },
+    "aime24": {
+      "n": 30,
+      "accuracy": 0.0,
+      "auditkit_headline": {
+        "math_verify_acc": 0.0,
+        "has_boxed": 96.67
+      },
+      "breakdown": {
+        "all": 0.0
+      },
+      "seconds": 16.7,
+      "auditkit_fingerprint": "6896dc55ebcf9c88"
+    },
+    "aime25": {
+      "n": 30,
+      "accuracy": 0.0,
+      "auditkit_headline": {
+        "math_verify_acc": 0.0,
+        "has_boxed": 96.67
+      },
+      "breakdown": {
+        "all": 0.0
+      },
+      "seconds": 18.6,
+      "auditkit_fingerprint": "5f45f408f6f5c46e"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "model": "stage1-math",
+  "tag": "stage1-math-indic",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "gsm8k_indic": {
+      "n": 26351,
+      "accuracy": 34.91,
+      "auditkit_headline": {
+        "math_verify_acc": 34.91,
+        "has_boxed": 91.8
+      },
+      "breakdown": {
+        "bn": 67.25,
+        "bn_roman": 14.86,
+        "gu": 68.08,
+        "gu_roman": 15.1,
+        "hi": 70.05,
+        "hi_roman": 46.63,
+        "kn": 29.49,
+        "kn_roman": 7.75,
+        "ml": 24.26,
+        "ml_roman": 9.1,
+        "mr": 68.23,
+        "mr_roman": 14.05,
+        "or": 9.4,
+        "or_roman": 16.07,
+        "pa": 68.23,
+        "pa_roman": 19.48,
+        "ta": 66.64,
+        "ta_roman": 6.75,
+        "te": 67.55,
+        "te_roman": 8.72
+      },
+      "seconds": 1430.8,
+      "auditkit_fingerprint": "4d64f50cfef767db"
+    }
+  }
+}

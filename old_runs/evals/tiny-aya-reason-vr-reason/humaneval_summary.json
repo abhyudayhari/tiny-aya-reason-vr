@@ -1,0 +1,13 @@
+{
+  "model": "tiny-aya-reason-vr",
+  "set": "humaneval",
+  "n": 164,
+  "accuracy": 57.32,
+  "breakdown": {
+    "humaneval": {
+      "n": 164,
+      "accuracy": 57.32
+    }
+  },
+  "seconds": 123.2
+}

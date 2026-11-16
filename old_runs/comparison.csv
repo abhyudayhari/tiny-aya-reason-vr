@@ -1,0 +1,20 @@
+area,benchmark,base_pct,stage1_math_pct,stage2_step400_pct,tiny_aya_reason_vr_pct,final_minus_base,final_minus_stage1
+Math,GSM8K,72.55,77.48,79.3,78.24,5.69,0.76
+Math,MATH-500,28.2,29.0,31.6,33.4,5.2,4.4
+Math,SVAMP,78.33,85.0,,83.33,5.0,-1.67
+Math,ASDiv,82.69,84.22,,85.14,2.45,0.92
+Math,GSM-Hard,26.76,31.08,,30.4,3.64,-0.68
+Math,GSM-Plus,55.95,62.71,,64.24,8.29,1.53
+Math,Minerva Math,10.29,11.76,,12.13,1.84,0.37
+Math,OlympiadBench,7.4,10.15,,8.61,1.21,-1.54
+Math,AMC 2023,2.5,17.5,,10.0,7.5,-7.5
+Math,AIME 2024,0.0,0.0,,0.0,0.0,0.0
+Math,AIME 2025,0.0,0.0,,0.0,0.0,0.0
+Multilingual math,MGSM (10 languages),58.44,66.76,65.84,66.44,8.0,-0.32
+Multilingual math,GSM8K Indic (20 variants),31.38,34.91,,35.62,4.24,0.71
+Finance,FinQA,40.63,42.98,46.82,49.0,8.37,6.02
+Finance,IndicFin,16.67,16.67,21.33,23.33,6.66,6.66
+Logic,BBH logic (8 tasks),48.3,57.8,58.3,57.95,9.65,0.15
+Logic,Knights & Knaves,24.0,22.0,26.0,30.0,6.0,8.0
+Code,HumanEval,56.1,57.93,58.54,57.32,1.22,-0.61
+Code,MBPP,54.09,53.31,55.25,56.81,2.72,3.5

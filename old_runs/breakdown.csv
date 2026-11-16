@@ -1,0 +1,213 @@
+benchmark,slice,model,model_label,accuracy_pct
+MGSM,bn,base,Base (tiny-aya-global),54.4
+MGSM,de,base,Base (tiny-aya-global),64.8
+MGSM,es,base,Base (tiny-aya-global),71.2
+MGSM,fr,base,Base (tiny-aya-global),59.2
+MGSM,ja,base,Base (tiny-aya-global),47.6
+MGSM,ru,base,Base (tiny-aya-global),67.2
+MGSM,sw,base,Base (tiny-aya-global),58.0
+MGSM,te,base,Base (tiny-aya-global),53.2
+MGSM,th,base,Base (tiny-aya-global),54.8
+MGSM,zh,base,Base (tiny-aya-global),54.0
+MGSM,bn,stage1-math,Stage 1 (math-only GRPO),63.2
+MGSM,de,stage1-math,Stage 1 (math-only GRPO),69.2
+MGSM,es,stage1-math,Stage 1 (math-only GRPO),76.0
+MGSM,fr,stage1-math,Stage 1 (math-only GRPO),71.2
+MGSM,ja,stage1-math,Stage 1 (math-only GRPO),62.0
+MGSM,ru,stage1-math,Stage 1 (math-only GRPO),75.6
+MGSM,sw,stage1-math,Stage 1 (math-only GRPO),65.2
+MGSM,te,stage1-math,Stage 1 (math-only GRPO),60.4
+MGSM,th,stage1-math,Stage 1 (math-only GRPO),62.8
+MGSM,zh,stage1-math,Stage 1 (math-only GRPO),62.0
+MGSM,bn,stage2-step400,Stage 2 (mixed GRPO) step 400,62.8
+MGSM,de,stage2-step400,Stage 2 (mixed GRPO) step 400,68.4
+MGSM,es,stage2-step400,Stage 2 (mixed GRPO) step 400,70.8
+MGSM,fr,stage2-step400,Stage 2 (mixed GRPO) step 400,68.4
+MGSM,ja,stage2-step400,Stage 2 (mixed GRPO) step 400,62.8
+MGSM,ru,stage2-step400,Stage 2 (mixed GRPO) step 400,69.2
+MGSM,sw,stage2-step400,Stage 2 (mixed GRPO) step 400,67.2
+MGSM,te,stage2-step400,Stage 2 (mixed GRPO) step 400,61.2
+MGSM,th,stage2-step400,Stage 2 (mixed GRPO) step 400,62.0
+MGSM,zh,stage2-step400,Stage 2 (mixed GRPO) step 400,65.6
+MGSM,bn,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),61.6
+MGSM,de,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),70.4
+MGSM,es,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),69.2
+MGSM,fr,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),70.8
+MGSM,ja,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),62.4
+MGSM,ru,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),70.4
+MGSM,sw,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),69.6
+MGSM,te,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),62.0
+MGSM,th,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),64.8
+MGSM,zh,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),63.2
+BBH,boolean_expressions,base,Base (tiny-aya-global),76.8
+BBH,formal_fallacies,base,Base (tiny-aya-global),55.6
+BBH,logical_deduction_five_objects,base,Base (tiny-aya-global),22.8
+BBH,logical_deduction_seven_objects,base,Base (tiny-aya-global),19.6
+BBH,multistep_arithmetic_two,base,Base (tiny-aya-global),45.6
+BBH,navigate,base,Base (tiny-aya-global),65.2
+BBH,tracking_shuffled_objects_five_objects,base,Base (tiny-aya-global),53.6
+BBH,web_of_lies,base,Base (tiny-aya-global),47.2
+BBH,boolean_expressions,stage1-math,Stage 1 (math-only GRPO),74.4
+BBH,formal_fallacies,stage1-math,Stage 1 (math-only GRPO),54.8
+BBH,logical_deduction_five_objects,stage1-math,Stage 1 (math-only GRPO),39.2
+BBH,logical_deduction_seven_objects,stage1-math,Stage 1 (math-only GRPO),34.0
+BBH,multistep_arithmetic_two,stage1-math,Stage 1 (math-only GRPO),57.6
+BBH,navigate,stage1-math,Stage 1 (math-only GRPO),68.4
+BBH,tracking_shuffled_objects_five_objects,stage1-math,Stage 1 (math-only GRPO),70.8
+BBH,web_of_lies,stage1-math,Stage 1 (math-only GRPO),63.2
+BBH,boolean_expressions,stage2-step400,Stage 2 (mixed GRPO) step 400,75.6
+BBH,formal_fallacies,stage2-step400,Stage 2 (mixed GRPO) step 400,54.0
+BBH,logical_deduction_five_objects,stage2-step400,Stage 2 (mixed GRPO) step 400,42.0
+BBH,logical_deduction_seven_objects,stage2-step400,Stage 2 (mixed GRPO) step 400,40.0
+BBH,multistep_arithmetic_two,stage2-step400,Stage 2 (mixed GRPO) step 400,48.4
+BBH,navigate,stage2-step400,Stage 2 (mixed GRPO) step 400,67.6
+BBH,tracking_shuffled_objects_five_objects,stage2-step400,Stage 2 (mixed GRPO) step 400,72.4
+BBH,web_of_lies,stage2-step400,Stage 2 (mixed GRPO) step 400,66.4
+BBH,boolean_expressions,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),74.8
+BBH,formal_fallacies,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),60.0
+BBH,logical_deduction_five_objects,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),37.6
+BBH,logical_deduction_seven_objects,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),35.6
+BBH,multistep_arithmetic_two,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),51.2
+BBH,navigate,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),64.4
+BBH,tracking_shuffled_objects_five_objects,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),73.2
+BBH,web_of_lies,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),66.8
+MATH-500 level,1,base,Base (tiny-aya-global),69.77
+MATH-500 level,2,base,Base (tiny-aya-global),46.67
+MATH-500 level,3,base,Base (tiny-aya-global),30.48
+MATH-500 level,4,base,Base (tiny-aya-global),21.09
+MATH-500 level,5,base,Base (tiny-aya-global),7.46
+MATH-500 level,1,stage1-math,Stage 1 (math-only GRPO),67.44
+MATH-500 level,2,stage1-math,Stage 1 (math-only GRPO),48.89
+MATH-500 level,3,stage1-math,Stage 1 (math-only GRPO),35.24
+MATH-500 level,4,stage1-math,Stage 1 (math-only GRPO),17.97
+MATH-500 level,5,stage1-math,Stage 1 (math-only GRPO),8.96
+MATH-500 level,1,stage2-step400,Stage 2 (mixed GRPO) step 400,74.42
+MATH-500 level,2,stage2-step400,Stage 2 (mixed GRPO) step 400,51.11
+MATH-500 level,3,stage2-step400,Stage 2 (mixed GRPO) step 400,38.1
+MATH-500 level,4,stage2-step400,Stage 2 (mixed GRPO) step 400,21.88
+MATH-500 level,5,stage2-step400,Stage 2 (mixed GRPO) step 400,8.96
+MATH-500 level,1,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),79.07
+MATH-500 level,2,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),52.22
+MATH-500 level,3,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),37.14
+MATH-500 level,4,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),23.44
+MATH-500 level,5,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),12.69
+GSM8K Indic,bn,base,Base (tiny-aya-global),61.87
+GSM8K Indic,bn_roman,base,Base (tiny-aya-global),14.18
+GSM8K Indic,gu,base,Base (tiny-aya-global),60.5
+GSM8K Indic,gu_roman,base,Base (tiny-aya-global),10.62
+GSM8K Indic,hi,base,Base (tiny-aya-global),65.05
+GSM8K Indic,hi_roman,base,Base (tiny-aya-global),39.8
+GSM8K Indic,kn,base,Base (tiny-aya-global),29.64
+GSM8K Indic,kn_roman,base,Base (tiny-aya-global),8.74
+GSM8K Indic,ml,base,Base (tiny-aya-global),19.03
+GSM8K Indic,ml_roman,base,Base (tiny-aya-global),9.7
+GSM8K Indic,mr,base,Base (tiny-aya-global),61.71
+GSM8K Indic,mr_roman,base,Base (tiny-aya-global),13.28
+GSM8K Indic,or,base,Base (tiny-aya-global),10.84
+GSM8K Indic,or_roman,base,Base (tiny-aya-global),13.72
+GSM8K Indic,pa,base,Base (tiny-aya-global),59.89
+GSM8K Indic,pa_roman,base,Base (tiny-aya-global),16.22
+GSM8K Indic,ta,base,Base (tiny-aya-global),58.61
+GSM8K Indic,ta_roman,base,Base (tiny-aya-global),5.3
+GSM8K Indic,te,base,Base (tiny-aya-global),59.36
+GSM8K Indic,te_roman,base,Base (tiny-aya-global),8.95
+GSM8K Indic,bn,stage1-math,Stage 1 (math-only GRPO),67.25
+GSM8K Indic,bn_roman,stage1-math,Stage 1 (math-only GRPO),14.86
+GSM8K Indic,gu,stage1-math,Stage 1 (math-only GRPO),68.08
+GSM8K Indic,gu_roman,stage1-math,Stage 1 (math-only GRPO),15.1
+GSM8K Indic,hi,stage1-math,Stage 1 (math-only GRPO),70.05
+GSM8K Indic,hi_roman,stage1-math,Stage 1 (math-only GRPO),46.63
+GSM8K Indic,kn,stage1-math,Stage 1 (math-only GRPO),29.49
+GSM8K Indic,kn_roman,stage1-math,Stage 1 (math-only GRPO),7.75
+GSM8K Indic,ml,stage1-math,Stage 1 (math-only GRPO),24.26
+GSM8K Indic,ml_roman,stage1-math,Stage 1 (math-only GRPO),9.1
+GSM8K Indic,mr,stage1-math,Stage 1 (math-only GRPO),68.23
+GSM8K Indic,mr_roman,stage1-math,Stage 1 (math-only GRPO),14.05
+GSM8K Indic,or,stage1-math,Stage 1 (math-only GRPO),9.4
+GSM8K Indic,or_roman,stage1-math,Stage 1 (math-only GRPO),16.07
+GSM8K Indic,pa,stage1-math,Stage 1 (math-only GRPO),68.23
+GSM8K Indic,pa_roman,stage1-math,Stage 1 (math-only GRPO),19.48
+GSM8K Indic,ta,stage1-math,Stage 1 (math-only GRPO),66.64
+GSM8K Indic,ta_roman,stage1-math,Stage 1 (math-only GRPO),6.75
+GSM8K Indic,te,stage1-math,Stage 1 (math-only GRPO),67.55
+GSM8K Indic,te_roman,stage1-math,Stage 1 (math-only GRPO),8.72
+GSM8K Indic,bn,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),67.93
+GSM8K Indic,bn_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),16.53
+GSM8K Indic,gu,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),68.31
+GSM8K Indic,gu_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),15.17
+GSM8K Indic,hi,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),70.2
+GSM8K Indic,hi_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),47.69
+GSM8K Indic,kn,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),31.99
+GSM8K Indic,kn_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),7.83
+GSM8K Indic,ml,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),26.61
+GSM8K Indic,ml_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),9.33
+GSM8K Indic,mr,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),66.94
+GSM8K Indic,mr_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),15.19
+GSM8K Indic,or,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),8.72
+GSM8K Indic,or_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),17.97
+GSM8K Indic,pa,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),69.75
+GSM8K Indic,pa_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),20.47
+GSM8K Indic,ta,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),67.55
+GSM8K Indic,ta_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),6.45
+GSM8K Indic,te,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),67.7
+GSM8K Indic,te_roman,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),9.55
+IndicFin,answerable,base,Base (tiny-aya-global),13.82
+IndicFin,lang:en,base,Base (tiny-aya-global),20.0
+IndicFin,lang:hi,base,Base (tiny-aya-global),14.0
+IndicFin,lang:hinglish,base,Base (tiny-aya-global),16.0
+IndicFin,task:ci,base,Base (tiny-aya-global),0.0
+IndicFin,task:disc_single,base,Base (tiny-aya-global),33.33
+IndicFin,task:disc_succ,base,Base (tiny-aya-global),9.52
+IndicFin,task:emi,base,Base (tiny-aya-global),4.76
+IndicFin,task:gst_add,base,Base (tiny-aya-global),41.67
+IndicFin,task:gst_inc_base,base,Base (tiny-aya-global),4.76
+IndicFin,task:si,base,Base (tiny-aya-global),19.05
+IndicFin,tier:1,base,Base (tiny-aya-global),31.82
+IndicFin,tier:2,base,Base (tiny-aya-global),4.76
+IndicFin,tier:3,base,Base (tiny-aya-global),4.76
+IndicFin,unanswerable,base,Base (tiny-aya-global),29.63
+IndicFin,answerable,stage1-math,Stage 1 (math-only GRPO),13.01
+IndicFin,lang:en,stage1-math,Stage 1 (math-only GRPO),18.0
+IndicFin,lang:hi,stage1-math,Stage 1 (math-only GRPO),20.0
+IndicFin,lang:hinglish,stage1-math,Stage 1 (math-only GRPO),12.0
+IndicFin,task:ci,stage1-math,Stage 1 (math-only GRPO),0.0
+IndicFin,task:disc_single,stage1-math,Stage 1 (math-only GRPO),28.57
+IndicFin,task:disc_succ,stage1-math,Stage 1 (math-only GRPO),4.76
+IndicFin,task:emi,stage1-math,Stage 1 (math-only GRPO),0.0
+IndicFin,task:gst_add,stage1-math,Stage 1 (math-only GRPO),62.5
+IndicFin,task:gst_inc_base,stage1-math,Stage 1 (math-only GRPO),0.0
+IndicFin,task:si,stage1-math,Stage 1 (math-only GRPO),14.29
+IndicFin,tier:1,stage1-math,Stage 1 (math-only GRPO),36.36
+IndicFin,tier:2,stage1-math,Stage 1 (math-only GRPO),1.59
+IndicFin,tier:3,stage1-math,Stage 1 (math-only GRPO),0.0
+IndicFin,unanswerable,stage1-math,Stage 1 (math-only GRPO),33.33
+IndicFin,answerable,stage2-step400,Stage 2 (mixed GRPO) step 400,12.2
+IndicFin,lang:en,stage2-step400,Stage 2 (mixed GRPO) step 400,20.0
+IndicFin,lang:hi,stage2-step400,Stage 2 (mixed GRPO) step 400,22.0
+IndicFin,lang:hinglish,stage2-step400,Stage 2 (mixed GRPO) step 400,22.0
+IndicFin,task:ci,stage2-step400,Stage 2 (mixed GRPO) step 400,4.76
+IndicFin,task:disc_single,stage2-step400,Stage 2 (mixed GRPO) step 400,28.57
+IndicFin,task:disc_succ,stage2-step400,Stage 2 (mixed GRPO) step 400,0.0
+IndicFin,task:emi,stage2-step400,Stage 2 (mixed GRPO) step 400,4.76
+IndicFin,task:gst_add,stage2-step400,Stage 2 (mixed GRPO) step 400,58.33
+IndicFin,task:gst_inc_base,stage2-step400,Stage 2 (mixed GRPO) step 400,14.29
+IndicFin,task:si,stage2-step400,Stage 2 (mixed GRPO) step 400,33.33
+IndicFin,tier:1,stage2-step400,Stage 2 (mixed GRPO) step 400,40.91
+IndicFin,tier:2,stage2-step400,Stage 2 (mixed GRPO) step 400,6.35
+IndicFin,tier:3,stage2-step400,Stage 2 (mixed GRPO) step 400,4.76
+IndicFin,unanswerable,stage2-step400,Stage 2 (mixed GRPO) step 400,62.96
+IndicFin,answerable,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),13.82
+IndicFin,lang:en,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),22.0
+IndicFin,lang:hi,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),24.0
+IndicFin,lang:hinglish,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),24.0
+IndicFin,task:ci,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),4.76
+IndicFin,task:disc_single,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),38.1
+IndicFin,task:disc_succ,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),4.76
+IndicFin,task:emi,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),0.0
+IndicFin,task:gst_add,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),58.33
+IndicFin,task:gst_inc_base,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),9.52
+IndicFin,task:si,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),42.86
+IndicFin,tier:1,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),46.97
+IndicFin,tier:2,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),6.35
+IndicFin,tier:3,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),0.0
+IndicFin,unanswerable,tiny-aya-reason-vr,tiny-aya-reason-vr (stage 2 step 1000),66.67

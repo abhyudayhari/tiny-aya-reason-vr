@@ -1,0 +1,13 @@
+{
+  "model": "CohereLabs/tiny-aya-global",
+  "set": "humaneval",
+  "n": 164,
+  "accuracy": 56.1,
+  "breakdown": {
+    "humaneval": {
+      "n": 164,
+      "accuracy": 56.1
+    }
+  },
+  "seconds": 193.7
+}

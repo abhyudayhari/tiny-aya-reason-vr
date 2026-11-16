@@ -1,0 +1,73 @@
+{
+  "model": "models/tiny-aya-global-eos3",
+  "tag": "base",
+  "n": 150,
+  "accuracy": 16.67,
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}. If the question does not give enough information to compute the answer, reply with \\boxed{INSUFFICIENT}.",
+  "breakdown": {
+    "answerable": {
+      "n": 123,
+      "accuracy": 13.82
+    },
+    "lang:en": {
+      "n": 50,
+      "accuracy": 20.0
+    },
+    "lang:hi": {
+      "n": 50,
+      "accuracy": 14.0
+    },
+    "lang:hinglish": {
+      "n": 50,
+      "accuracy": 16.0
+    },
+    "task:ci": {
+      "n": 21,
+      "accuracy": 0.0
+    },
+    "task:disc_single": {
+      "n": 21,
+      "accuracy": 33.33
+    },
+    "task:disc_succ": {
+      "n": 21,
+      "accuracy": 9.52
+    },
+    "task:emi": {
+      "n": 21,
+      "accuracy": 4.76
+    },
+    "task:gst_add": {
+      "n": 24,
+      "accuracy": 41.67
+    },
+    "task:gst_inc_base": {
+      "n": 21,
+      "accuracy": 4.76
+    },
+    "task:si": {
+      "n": 21,
+      "accuracy": 19.05
+    },
+    "tier:1": {
+      "n": 66,
+      "accuracy": 31.82
+    },
+    "tier:2": {
+      "n": 63,
+      "accuracy": 4.76
+    },
+    "tier:3": {
+      "n": 21,
+      "accuracy": 4.76
+    },
+    "unanswerable": {
+      "n": 27,
+      "accuracy": 29.63
+    }
+  },
+  "auditkit_headline": {
+    "indicfin_acc": 0.16666666666666666
+  },
+  "seconds": 67.7
+}

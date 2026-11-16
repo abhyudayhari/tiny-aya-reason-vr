@@ -1,0 +1,13 @@
+{
+  "model": "stage1-math",
+  "set": "mbpp",
+  "n": 257,
+  "accuracy": 53.31,
+  "breakdown": {
+    "mbpp": {
+      "n": 257,
+      "accuracy": 53.31
+    }
+  },
+  "seconds": 51.4
+}

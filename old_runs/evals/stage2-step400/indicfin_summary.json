@@ -1,0 +1,73 @@
+{
+  "model": "stage2-step400",
+  "tag": "stage2-step400",
+  "n": 150,
+  "accuracy": 21.33,
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}. If the question does not give enough information to compute the answer, reply with \\boxed{INSUFFICIENT}.",
+  "breakdown": {
+    "answerable": {
+      "n": 123,
+      "accuracy": 12.2
+    },
+    "lang:en": {
+      "n": 50,
+      "accuracy": 20.0
+    },
+    "lang:hi": {
+      "n": 50,
+      "accuracy": 22.0
+    },
+    "lang:hinglish": {
+      "n": 50,
+      "accuracy": 22.0
+    },
+    "task:ci": {
+      "n": 21,
+      "accuracy": 4.76
+    },
+    "task:disc_single": {
+      "n": 21,
+      "accuracy": 28.57
+    },
+    "task:disc_succ": {
+      "n": 21,
+      "accuracy": 0.0
+    },
+    "task:emi": {
+      "n": 21,
+      "accuracy": 4.76
+    },
+    "task:gst_add": {
+      "n": 24,
+      "accuracy": 58.33
+    },
+    "task:gst_inc_base": {
+      "n": 21,
+      "accuracy": 14.29
+    },
+    "task:si": {
+      "n": 21,
+      "accuracy": 33.33
+    },
+    "tier:1": {
+      "n": 66,
+      "accuracy": 40.91
+    },
+    "tier:2": {
+      "n": 63,
+      "accuracy": 6.35
+    },
+    "tier:3": {
+      "n": 21,
+      "accuracy": 4.76
+    },
+    "unanswerable": {
+      "n": 27,
+      "accuracy": 62.96
+    }
+  },
+  "auditkit_headline": {
+    "indicfin_acc": 0.21333333333333335
+  },
+  "seconds": 136.3
+}

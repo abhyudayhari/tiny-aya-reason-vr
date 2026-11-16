@@ -1,0 +1,132 @@
+{
+  "model": "stage1-math",
+  "tag": "stage1-math-extra",
+  "prompt_suffix": "\n\nPlease reason step by step, and put your final answer within \\boxed{}.",
+  "decoding": "greedy",
+  "max_tokens": 4096,
+  "sets": {
+    "svamp": {
+      "n": 300,
+      "accuracy": 85.0,
+      "auditkit_headline": {
+        "math_verify_acc": 85.0,
+        "has_boxed": 100.0
+      },
+      "breakdown": {
+        "all": 85.0
+      },
+      "seconds": 66.4,
+      "auditkit_fingerprint": "41a1f693a35c3520"
+    },
+    "asdiv": {
+      "n": 2167,
+      "accuracy": 84.22,
+      "auditkit_headline": {
+        "math_verify_acc": 84.22,
+        "has_boxed": 99.63
+      },
+      "breakdown": {
+        "all": 84.22
+      },
+      "seconds": 44.6,
+      "auditkit_fingerprint": "3883e962e3adbd16"
+    },
+    "gsm_hard": {
+      "n": 1319,
+      "accuracy": 31.08,
+      "auditkit_headline": {
+        "math_verify_acc": 31.08,
+        "has_boxed": 99.55
+      },
+      "breakdown": {
+        "all": 31.08
+      },
+      "seconds": 48.4,
+      "auditkit_fingerprint": "82cd37a7bef869b7"
+    },
+    "gsm_plus": {
+      "n": 2100,
+      "accuracy": 62.71,
+      "auditkit_headline": {
+        "math_verify_acc": 62.71,
+        "has_boxed": 99.9
+      },
+      "breakdown": {
+        "adding operation": 54.67,
+        "digit expansion": 71.0,
+        "distraction insertion": 56.33,
+        "integer-decimal-fraction conversion": 59.33,
+        "numerical substitution": 68.67,
+        "problem understanding": 77.33,
+        "reversing operation": 51.67
+      },
+      "seconds": 48.8,
+      "auditkit_fingerprint": "7045feac328a8c5a"
+    },
+    "minerva": {
+      "n": 272,
+      "accuracy": 11.76,
+      "auditkit_headline": {
+        "math_verify_acc": 11.76,
+        "has_boxed": 98.9
+      },
+      "breakdown": {
+        "all": 11.76
+      },
+      "seconds": 40.7,
+      "auditkit_fingerprint": "4bb294a7ed531265"
+    },
+    "olympiad": {
+      "n": 581,
+      "accuracy": 10.15,
+      "auditkit_headline": {
+        "math_verify_acc": 10.15,
+        "has_boxed": 96.9
+      },
+      "breakdown": {
+        "all": 10.15
+      },
+      "seconds": 43.1,
+      "auditkit_fingerprint": "9776552772c7d5b7"
+    },
+    "amc23": {
+      "n": 40,
+      "accuracy": 17.5,
+      "auditkit_headline": {
+        "math_verify_acc": 17.5,
+        "has_boxed": 100.0
+      },
+      "breakdown": {
+        "all": 17.5
+      },
+      "seconds": 14.2,
+      "auditkit_fingerprint": "f8ce3ceed1173e70"
+    },
+    "aime24": {
+      "n": 30,
+      "accuracy": 0.0,
+      "auditkit_headline": {
+        "math_verify_acc": 0.0,
+        "has_boxed": 90.0
+      },
+      "breakdown": {
+        "all": 0.0
+      },
+      "seconds": 16.7,
+      "auditkit_fingerprint": "6e338a3b3f314687"
+    },
+    "aime25": {
+      "n": 30,
+      "accuracy": 0.0,
+      "auditkit_headline": {
+        "math_verify_acc": 0.0,
+        "has_boxed": 100.0
+      },
+      "breakdown": {
+        "all": 0.0
+      },
+      "seconds": 6.7,
+      "auditkit_fingerprint": "dedbfc7c8da27e68"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "model": "tiny-aya-reason-vr",
+  "set": "bbh",
+  "n": 2000,
+  "accuracy": 57.95,
+  "breakdown": {
+    "boolean_expressions": {
+      "n": 250,
+      "accuracy": 74.8
+    },
+    "formal_fallacies": {
+      "n": 250,
+      "accuracy": 60.0
+    },
+    "logical_deduction_five_objects": {
+      "n": 250,
+      "accuracy": 37.6
+    },
+    "logical_deduction_seven_objects": {
+      "n": 250,
+      "accuracy": 35.6
+    },
+    "multistep_arithmetic_two": {
+      "n": 250,
+      "accuracy": 51.2
+    },
+    "navigate": {
+      "n": 250,
+      "accuracy": 64.4
+    },
+    "tracking_shuffled_objects_five_objects": {
+      "n": 250,
+      "accuracy": 73.2
+    },
+    "web_of_lies": {
+      "n": 250,
+      "accuracy": 66.8
+    }
+  },
+  "seconds": 112.8
+}

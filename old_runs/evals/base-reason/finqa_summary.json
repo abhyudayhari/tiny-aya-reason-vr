@@ -1,0 +1,13 @@
+{
+  "model": "CohereLabs/tiny-aya-global",
+  "set": "finqa",
+  "n": 1147,
+  "accuracy": 40.63,
+  "breakdown": {
+    "finqa": {
+      "n": 1147,
+      "accuracy": 40.63
+    }
+  },
+  "seconds": 198.8
+}

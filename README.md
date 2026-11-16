@@ -6,28 +6,49 @@ The pipeline uses **CuratorKIT** (data curation), **AlignTune** (GRPO/DAPO and S
 
 ## Results
 
-All scores are accuracy (%).
+These are the eval numbers from the old runs. All scores are accuracy (%).
+- **Stage 1** is the math-only GRPO model.
+- **Stage 2** is the mixed-domain GRPO run, evaluated at steps 400 and 1000.
+- The released model, **tiny-aya-reason-vr**, is stage 2 at step 1000.
 
-| Area | Benchmark | tiny-aya-global | **tiny-aya-reason-vr** |
-|---|---|---|---|
-| Math | GSM8K | 72.55 | **78.24** |
-| Math | MATH-500 | 28.20 | **33.40** |
-| Math | SVAMP | 78.33 | **83.33** |
-| Math | ASDiv | 82.69 | **85.14** |
-| Math | GSM-Hard | 26.76 | **30.40** |
-| Math | GSM-Plus | 55.95 | **64.24** |
-| Math | Minerva Math | 10.29 | **12.13** |
-| Math | OlympiadBench | 7.40 | **8.61** |
-| Math | AMC 2023 | 2.50 | **10.00** |
-| Math | AIME 2024 / 2025 | 0.00 | 0.00 |
-| Multilingual | MGSM (10 languages) | 58.44 | **66.44** |
-| Multilingual | GSM8K Indic (20 variants) | 31.38 | **35.62** |
-| Finance | FinQA | 40.63 | **49.00** |
-| Finance | IndicFin | 16.67 | **23.33** |
-| Logic | BBH logic (8 tasks) | 48.30 | **57.95** |
-| Logic | Knights & Knaves | 24.00 | **30.00** |
-| Code | HumanEval | 56.10 | **57.32** |
-| Code | MBPP | 54.09 | **56.81** |
+| Area | Benchmark | tiny-aya-global | Stage 1 (math) | Stage 2 step 400 | **tiny-aya-reason-vr** | Δ vs base |
+|---|---|---|---|---|---|---|
+| Math | GSM8K | 72.55 | 77.48 | 79.30 | 78.24 | +5.69 |
+| Math | MATH-500 | 28.20 | 29.00 | 31.60 | **33.40** | +5.20 |
+| Math | SVAMP | 78.33 | 85.00 | – | 83.33 | +5.00 |
+| Math | ASDiv | 82.69 | 84.22 | – | **85.14** | +2.45 |
+| Math | GSM-Hard | 26.76 | 31.08 | – | 30.40 | +3.64 |
+| Math | GSM-Plus | 55.95 | 62.71 | – | **64.24** | +8.29 |
+| Math | Minerva Math | 10.29 | 11.76 | – | **12.13** | +1.84 |
+| Math | OlympiadBench | 7.40 | 10.15 | – | 8.61 | +1.21 |
+| Math | AMC 2023 (40 problems) | 2.50 | 17.50 | – | 10.00 | +7.50 |
+| Math | AIME 2024 / 2025 | 0.00 | 0.00 | – | 0.00 | 0.00 |
+| Multilingual | MGSM (10 languages) | 58.44 | 66.76 | 65.84 | 66.44 | +8.00 |
+| Multilingual | GSM8K Indic (20 variants) | 31.38 | 34.91 | – | **35.62** | +4.24 |
+| Finance | FinQA | 40.63 | 42.98 | 46.82 | **49.00** | +8.37 |
+| Finance | IndicFin | 16.67 | 16.67 | 21.33 | **23.33** | +6.66 |
+| Logic | BBH logic (8 tasks) | 48.30 | 57.80 | 58.30 | 57.95 | +9.65 |
+| Logic | Knights & Knaves | 24.00 | 22.00 | 26.00 | **30.00** | +6.00 |
+| Code | HumanEval | 56.10 | 57.93 | 58.54 | 57.32 | +1.22 |
+| Code | MBPP | 54.09 | 53.31 | 55.25 | **56.81** | +2.72 |
+
+Bold marks the rows where the released model has the best score. "–" means that benchmark wasn't run at step 400.
+
+The released model beats the base on 17 of 19 benchmarks; the other two are AIME 2024 and 2025, where every model scores 0. It beats the stage-1 model on 11 of 19.
+
+### Files from the old runs (`old_runs/`)
+
+| Path | Contents |
+|---|---|
+| `comparison.csv` | the table above |
+| `breakdown.csv` | per-language (MGSM, GSM8K Indic), per-task (BBH) and per-level (MATH-500) results |
+| `evals/<model>[-extra\|-extra2\|-indic\|-reason]/` | `summary.json` / `*_summary.json`, plus every model output with its extracted answer and whether it was correct (`<benchmark>.jsonl`, gzipped if large) |
+| `training/` | reward and metric curves for both stages: `stage1_math.png`, `stage2_mixed.png` and `stage1_vs_stage2.png` |
+| | the full training logs (`*_trainer_state.json`) and the stage-2 reward per 100 steps |
+
+Stage-2 training reward rose from 0.42 in the first 100 steps to about 0.50, and was flat after about step 700. In `stage2_mixed.png`, the dashed line at step 611 marks where training was interrupted and resumed from checkpoint 600.
+
+![Stage 1 vs stage 2 training reward](old_runs/training/stage1_vs_stage2.png)
 
 ## Method
 
@@ -135,6 +156,7 @@ Or run step by step:
 | `configs/curate_sft.yaml` | CuratorKIT pipeline |
 | `run/` | pipeline steps |
 | `runpod/` | pod setup and the detached runner |
+| `old_runs/` | eval results and training curves from the old runs |
 | `tests/` | reward checks: gold solutions must pass, and hung or forking code must time out |
 
 ## Licence notes

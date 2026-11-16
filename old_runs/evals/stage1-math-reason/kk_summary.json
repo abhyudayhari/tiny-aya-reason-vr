@@ -1,0 +1,13 @@
+{
+  "model": "stage1-math",
+  "set": "kk",
+  "n": 100,
+  "accuracy": 22.0,
+  "breakdown": {
+    "kk-5ppl": {
+      "n": 100,
+      "accuracy": 22.0
+    }
+  },
+  "seconds": 6.6
+}
