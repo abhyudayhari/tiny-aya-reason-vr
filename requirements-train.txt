@@ -1,0 +1,5 @@
+aligntune[vllm]==0.1.35
+curatorkit[connectors]==0.1.27
+math-verify[antlr4_13_2]
+peft
+datasets

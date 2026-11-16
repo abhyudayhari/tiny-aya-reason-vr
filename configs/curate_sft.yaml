@@ -1,0 +1,31 @@
+# CuratorKIT pipeline for the SFT set (stage 2 of SFT data prep).
+# readers -> gates -> normalizers -> exporters. Rejections land in rejected.jsonl.
+name: aya_math_sft
+version: "1.0.0"
+
+readers:
+  - type: jsonl
+    path: data/sft_stage1_alpaca.jsonl
+    format: alpaca
+
+gates:
+  - type: schema
+    required_fields: [instruction, output]
+    min_tokens: 20
+    max_tokens: 900          # whitespace tokens, instruction + output
+
+normalizers:
+  - type: exact_dedup
+  - type: minhash_dedup       # near-duplicate problems (OMI-2 augmentation produces many)
+    minhash_threshold: 0.85
+    minhash_ngram: 5
+  - type: text_cleaner       # keep math intact: no HTML stripping (it eats "<" and ">"), keep newlines
+    transforms:
+      strip_html: false
+      normalise_unicode: true
+      fix_encoding_artifacts: true
+      collapse_whitespace: false
+      remove_control_chars: true
+
+exporters:
+  - type: messages           # sft_messages.jsonl, consumed by AlignTune / TRL SFT
